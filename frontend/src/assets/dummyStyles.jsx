@@ -244,15 +244,15 @@ export const adminLayoutStyles = {
 
 export const sidebarStyles = {
   // mobile menu button
-  mobileMenuButton: "fixed left-4 top-4 z-50 inline-flex h-11 w-11 items-center justify-center rounded-2xl border border-white/20 bg-slate-950 text-library-paper shadow-lg md:hidden",
+  mobileMenuButton: "fixed left-4 top-4 z-50 inline-flex h-11 w-11 items-center justify-center rounded-2xl border border-white/20 bg-library-panel text-library-paper shadow-lg md:hidden",
 
   // mobile overlay
-  mobileOverlay: "fixed inset-0 z-40 bg-slate-900/40 transition md:hidden",
+  mobileOverlay: "fixed inset-0 z-40 bg-library-ink/40 transition md:hidden",
   mobileOverlayOpen: "opacity-100",
   mobileOverlayClosed: "pointer-events-none opacity-0",
 
   // sidebar container
-  sidebar: "fixed left-0 top-0 z-50 flex h-full w-[min(18.5rem,calc(100vw-1rem))] max-w-full flex-col border-r border-white/10 bg-slate-950 text-library-paper transition-transform duration-300 md:w-72.5 md:translate-x-0",
+  sidebar: "fixed left-0 top-0 z-50 flex h-full w-[min(18.5rem,calc(100vw-1rem))] max-w-full flex-col border-r border-white/10 bg-library-panel text-library-paper transition-transform duration-300 md:w-72.5 md:translate-x-0",
   sidebarOpen: "translate-x-0",
   sidebarClosed: "-translate-x-full",
 
@@ -264,32 +264,32 @@ export const sidebarStyles = {
   subtitle: "wrap-break-word mt-1 text-sm text-library-paper/70",
   badgeBase: "mt-4 inline-flex rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] ring-1",
   badgeAdmin: "bg-amber-100 text-amber-900 ring-amber-300/80",
-  badgeUser: "bg-slate-100 text-slate-900 ring-slate-300/80",
+  badgeUser: "bg-emerald-100 text-emerald-900 ring-emerald-300/80",
   closeButton: "inline-flex h-10 w-10 items-center justify-center rounded-2xl border border-white/10 text-library-paper/80 md:hidden",
 
   // navigation
   nav: "flex-1 space-y-2 overflow-y-auto px-4 py-6",
   navLink: "group flex items-center gap-3 rounded-2xl px-4 py-3 transition",
-  navLinkActive: "bg-white text-slate-900 shadow-lg",
+  navLinkActive: "bg-white text-library-ink shadow-lg",
   navLinkInactive: "text-library-paper/85 hover:bg-white/10 hover:text-white",
   navIconWrapper: "inline-flex h-10 w-10 items-center justify-center rounded-xl",
-  navIconWrapperActive: "bg-library-paper text-slate-950",
+  navIconWrapperActive: "bg-library-paper text-library-panel",
   navIconWrapperInactive: "bg-white/10",
   navLabel: "wrap-anywhere block text-sm font-semibold",
   navDescription: "wrap-anywhere block text-xs",
-  navDescriptionActive: "text-slate-900/60",
+  navDescriptionActive: "text-library-ink/60",
   navDescriptionInactive: "text-library-paper/60",
   navChevron: "transition",
-  navChevronActive: "text-slate-900/60",
+  navChevronActive: "text-library-ink/60",
   navChevronInactive: "text-library-paper/55",
 
   // footer
   footer: "space-y-3 border-t border-white/10 px-4 py-5",
   footerButton: "flex w-full items-center justify-between rounded-2xl px-4 py-3 text-sm font-semibold transition",
-  footerButtonPrimary: "bg-library-gold text-slate-900 hover:bg-library-gold-soft",
+  footerButtonPrimary: "bg-library-gold text-library-ink hover:bg-library-gold-soft",
   footerButtonSecondary: "border border-white/15 bg-white/5 text-library-paper hover:bg-white/10",
   footerLink: "flex items-center justify-between rounded-2xl px-4 py-3 text-sm font-semibold transition",
-  footerLinkPrimary: "bg-library-gold text-slate-900 hover:bg-library-gold-soft",
+  footerLinkPrimary: "bg-library-gold text-library-ink hover:bg-library-gold-soft",
   footerLinkSecondary: "border border-white/15 bg-white/5 text-library-paper hover:bg-white/10",
   footerIconWrapper: "inline-flex items-center gap-3",
 };

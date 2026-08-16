@@ -99,7 +99,7 @@ function Homes() {
                                         <Link to={
                                             currentUser.role === "admin" ?
                                                 "/admin/dashboard" : "/user/dashboard"
-                                        } className={s.heroButtonPrimary}>
+                                        } className={s.heroButtonPrimary} style={{color:'white'}}>
                                             Go To Dashboard
                                             <ArrowRight size={16} />
                                         </Link>
