@@ -1,5 +1,5 @@
 import express from "express";
-import {authenticateToken, authorizeRoles} from "../controllers/authController.js"
+import {authenticateToken, authorizeRoles} from "../middlewares/authMiddleware.js"
 import { applyFine, clearFine, getFineSettings, getIssues, getStudentIssues, issueManualBooks, returnBook, updateFineSettings } from "../controllers/bookContoller.js";
 
 

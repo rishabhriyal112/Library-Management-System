@@ -64,6 +64,6 @@ export async function searchStudentsByRoll(req, res) {
 
     catch (error) {
         console.log("Error searching student by rollno : ", error);
-        res.status(500).json({ success: false, message: "Error searching students by rollno " })
+        res.status(500).json({ success: false, message: "Error searching students by rollno ", error : error.message})
     }
 }

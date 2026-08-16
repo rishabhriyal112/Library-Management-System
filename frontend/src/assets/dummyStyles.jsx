@@ -244,15 +244,15 @@ export const adminLayoutStyles = {
 
 export const sidebarStyles = {
   // mobile menu button
-  mobileMenuButton: "fixed left-4 top-4 z-50 inline-flex h-11 w-11 items-center justify-center rounded-2xl border border-white/20 bg-library-panel text-library-paper shadow-lg md:hidden",
+  mobileMenuButton: "fixed left-4 top-4 z-50 inline-flex h-11 w-11 items-center justify-center rounded-2xl border border-white/20 bg-slate-950 text-library-paper shadow-lg md:hidden",
 
   // mobile overlay
-  mobileOverlay: "fixed inset-0 z-40 bg-library-ink/40 transition md:hidden",
+  mobileOverlay: "fixed inset-0 z-40 bg-slate-900/40 transition md:hidden",
   mobileOverlayOpen: "opacity-100",
   mobileOverlayClosed: "pointer-events-none opacity-0",
 
   // sidebar container
-  sidebar: "fixed left-0 top-0 z-50 flex h-full w-[min(18.5rem,calc(100vw-1rem))] max-w-full flex-col border-r border-white/10 bg-library-panel text-library-paper transition-transform duration-300 md:w-72.5 md:translate-x-0",
+  sidebar: "fixed left-0 top-0 z-50 flex h-full w-[min(18.5rem,calc(100vw-1rem))] max-w-full flex-col border-r border-white/10 bg-slate-950 text-library-paper transition-transform duration-300 md:w-72.5 md:translate-x-0",
   sidebarOpen: "translate-x-0",
   sidebarClosed: "-translate-x-full",
 
@@ -264,32 +264,32 @@ export const sidebarStyles = {
   subtitle: "wrap-break-word mt-1 text-sm text-library-paper/70",
   badgeBase: "mt-4 inline-flex rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] ring-1",
   badgeAdmin: "bg-amber-100 text-amber-900 ring-amber-300/80",
-  badgeUser: "bg-emerald-100 text-emerald-900 ring-emerald-300/80",
+  badgeUser: "bg-slate-100 text-slate-900 ring-slate-300/80",
   closeButton: "inline-flex h-10 w-10 items-center justify-center rounded-2xl border border-white/10 text-library-paper/80 md:hidden",
 
   // navigation
   nav: "flex-1 space-y-2 overflow-y-auto px-4 py-6",
   navLink: "group flex items-center gap-3 rounded-2xl px-4 py-3 transition",
-  navLinkActive: "bg-white text-library-ink shadow-lg",
+  navLinkActive: "bg-white text-slate-900 shadow-lg",
   navLinkInactive: "text-library-paper/85 hover:bg-white/10 hover:text-white",
   navIconWrapper: "inline-flex h-10 w-10 items-center justify-center rounded-xl",
-  navIconWrapperActive: "bg-library-paper text-library-panel",
+  navIconWrapperActive: "bg-library-paper text-slate-950",
   navIconWrapperInactive: "bg-white/10",
   navLabel: "wrap-anywhere block text-sm font-semibold",
   navDescription: "wrap-anywhere block text-xs",
-  navDescriptionActive: "text-library-ink/60",
+  navDescriptionActive: "text-slate-900/60",
   navDescriptionInactive: "text-library-paper/60",
   navChevron: "transition",
-  navChevronActive: "text-library-ink/60",
+  navChevronActive: "text-slate-900/60",
   navChevronInactive: "text-library-paper/55",
 
   // footer
   footer: "space-y-3 border-t border-white/10 px-4 py-5",
   footerButton: "flex w-full items-center justify-between rounded-2xl px-4 py-3 text-sm font-semibold transition",
-  footerButtonPrimary: "bg-library-gold text-library-ink hover:bg-library-gold-soft",
+  footerButtonPrimary: "bg-library-gold text-slate-900 hover:bg-library-gold-soft",
   footerButtonSecondary: "border border-white/15 bg-white/5 text-library-paper hover:bg-white/10",
   footerLink: "flex items-center justify-between rounded-2xl px-4 py-3 text-sm font-semibold transition",
-  footerLinkPrimary: "bg-library-gold text-library-ink hover:bg-library-gold-soft",
+  footerLinkPrimary: "bg-library-gold text-slate-900 hover:bg-library-gold-soft",
   footerLinkSecondary: "border border-white/15 bg-white/5 text-library-paper hover:bg-white/10",
   footerIconWrapper: "inline-flex items-center gap-3",
 };
@@ -304,7 +304,7 @@ export const loginStyles = {
   mainCard: "grid w-full max-w-6xl overflow-hidden rounded-[28px] border border-white/60 bg-library-paper/85 shadow-[0_25px_60px_rgba(20,35,29,0.18)] backdrop-blur-[18px] sm:rounded-[36px] lg:grid-cols-[1fr_0.95fr]",
 
   // left panel (info)
-  infoPanel: "bg-library-panel p-5 text-library-paper sm:p-8 lg:p-10",
+  infoPanel: "bg-slate-950 p-5 text-library-paper sm:p-8 lg:p-10",
   roleBadge: "inline-flex rounded-full bg-white/10 px-3 py-1.5 text-[0.65rem] font-bold uppercase tracking-[0.18em] text-library-paper/85 sm:px-4 sm:text-xs sm:tracking-[0.28em]",
   infoTitle: "mt-6 font-display text-4xl font-semibold leading-tight text-library-gold-soft sm:text-5xl sm:leading-none lg:text-6xl",
   infoDescription: "mt-4 max-w-xl text-sm leading-7 text-library-paper/72",
@@ -316,38 +316,38 @@ export const loginStyles = {
   // right panel (form)
   formPanel: "p-5 sm:p-8 lg:p-10",
   formInner: "mx-auto max-w-md",
-  backLink: "text-sm font-semibold text-library-ink/62",
-  formTitle: "mt-4 font-display text-4xl font-semibold text-library-ink sm:text-5xl",
-  formSubtitle: "mt-2 text-sm text-library-ink/65",
+  backLink: "text-sm font-semibold text-slate-900/62",
+  formTitle: "mt-4 font-display text-4xl font-semibold text-slate-900 sm:text-5xl",
+  formSubtitle: "mt-2 text-sm text-slate-900/65",
 
   // role selection
-  roleContainer: "rounded-3xl border border-library-ink/10 bg-white/70 p-4",
-  roleLabel: "text-sm font-semibold text-library-ink",
+  roleContainer: "rounded-3xl border border-slate-900/10 bg-white/70 p-4",
+  roleLabel: "text-sm font-semibold text-slate-900",
   roleGrid: "mt-3 grid gap-3 sm:grid-cols-2",
   roleOption: "rounded-[20px] border px-4 py-4 transition",
-  roleOptionSelected: "border-library-panel bg-library-panel text-library-paper",
-  roleOptionUnselected: "border-library-ink/10 bg-library-paper/70 text-library-ink",
+  roleOptionSelected: "border-slate-950 bg-slate-950 text-library-paper",
+  roleOptionUnselected: "border-slate-900/10 bg-library-paper/70 text-slate-900",
   roleRadio: "sr-only",
   roleIconLabel: "inline-flex items-center gap-2 text-sm font-semibold",
 
   // form fields
   form: "mt-8 space-y-4",
-  fieldLabel: "mb-2 inline-flex items-center gap-2 text-sm font-semibold text-library-ink/72",
-  input: "w-full rounded-2xl border border-library-ink/10 bg-white/75 px-4 py-3 outline-none transition focus:border-library-panel",
-  passwordWrapper: "flex items-center rounded-2xl border border-library-ink/10 bg-white/75 px-4 py-3 transition focus-within:border-library-panel",
+  fieldLabel: "mb-2 inline-flex items-center gap-2 text-sm font-semibold text-slate-900/72",
+  input: "w-full rounded-2xl border border-slate-900/10 bg-white/75 px-4 py-3 outline-none transition focus:border-slate-950",
+  passwordWrapper: "flex items-center rounded-2xl border border-slate-900/10 bg-white/75 px-4 py-3 transition focus-within:border-slate-950",
   passwordInput: "w-full bg-transparent outline-none",
-  togglePasswordButton: "inline-flex h-9 w-9 items-center justify-center rounded-xl text-library-ink/60 transition hover:bg-library-paper",
+  togglePasswordButton: "inline-flex h-9 w-9 items-center justify-center rounded-xl text-slate-900/60 transition hover:bg-library-paper",
 
   // error message
   errorMessage: "rounded-2xl border border-rose-200 bg-rose-50 px-4 py-3 text-sm text-rose-800",
 
   // footer links
   footerFlex: "flex flex-col gap-2 text-sm sm:flex-row sm:items-center sm:justify-between",
-  footerText: "text-library-ink/58",
-  signupLink: "font-semibold text-library-panel",
+  footerText: "text-slate-900/58",
+  signupLink: "font-semibold text-slate-950",
 
   // submit button
-  submitButton: "mt-3 inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-library-panel px-5 py-3 text-sm font-semibold text-library-paper transition hover:bg-library-panel-soft disabled:opacity-75 disabled:cursor-not-allowed",
+  submitButton: "mt-3 inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-slate-950 px-5 py-3 text-sm font-semibold text-library-paper transition hover:bg-slate-800 disabled:opacity-75 disabled:cursor-not-allowed",
 };
 
 // assets/dummyStyles.js
@@ -426,27 +426,27 @@ export const homeStyles = {
   innerContainer: "mx-auto max-w-7xl space-y-6",
 
   // hero section
-  heroSection: "overflow-hidden rounded-[28px] border border-white/60 bg-[linear-gradient(rgba(20,35,29,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(20,35,29,0.03)_1px,transparent_1px)] bg-library-paper/80 p-5 shadow-[0_25px_60px_rgba(20,35,29,0.18)] backdrop-blur-[18px] [background-size:28px_28px] sm:rounded-[32px] sm:p-6 lg:rounded-[36px] lg:p-10",
+  heroSection: "overflow-hidden rounded-[28px] border border-white/60 bg-[linear-gradient(rgba(15,23,42,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(15,23,42,0.03)_1px,transparent_1px)] bg-library-paper/80 p-5 shadow-[0_25px_60px_rgba(15,23,42,0.18)] backdrop-blur-[18px] [background-size:28px_28px] sm:rounded-[32px] sm:p-6 lg:rounded-[36px] lg:p-10",
   heroGrid: "grid gap-8 xl:grid-cols-[1.25fr_0.9fr] xl:items-center",
-  heroBadge: "inline-flex rounded-full bg-library-panel px-3 py-1.5 text-[0.65rem] font-bold uppercase tracking-[0.22em] text-library-paper sm:px-4 sm:text-xs sm:tracking-[0.3em]",
-  heroTitle: "mt-6 max-w-3xl font-display text-4xl font-semibold leading-tight text-library-ink sm:text-5xl sm:leading-none lg:text-6xl xl:text-7xl",
-  heroText: "mt-5 max-w-2xl text-sm leading-7 text-library-ink/72 sm:text-base sm:leading-8",
+  heroBadge: "inline-flex rounded-full bg-slate-950 px-3 py-1.5 text-[0.65rem] font-bold uppercase tracking-[0.22em] text-library-paper sm:px-4 sm:text-xs sm:tracking-[0.3em]",
+  heroTitle: "mt-6 max-w-3xl font-display text-4xl font-semibold leading-tight text-slate-900 sm:text-5xl sm:leading-none lg:text-6xl xl:text-7xl",
+  heroText: "mt-5 max-w-2xl text-sm leading-7 text-slate-900/72 sm:text-base sm:leading-8",
   heroButtons: "mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-4",
-  heroButtonPrimary: "inline-flex w-full items-center justify-center gap-2 rounded-full bg-library-success px-6 py-3 text-sm font-semibold transition sm:w-auto text-library-paper",
-  heroButtonSecondary: "inline-flex w-full items-center justify-center gap-2 rounded-full border border-library-ink/12 bg-white/80 px-6 py-3 text-sm font-semibold text-library-ink transition hover:bg-library-paper sm:w-auto",
+  heroButtonPrimary: "inline-flex w-full items-center justify-center gap-2 rounded-full bg-slate-950 px-6 py-3 text-sm font-semibold transition sm:w-auto text-library-paper",
+  heroButtonSecondary: "inline-flex w-full items-center justify-center gap-2 rounded-full border border-slate-900/12 bg-white/80 px-6 py-3 text-sm font-semibold text-slate-900 transition hover:bg-library-paper sm:w-auto",
 
   // right info card
-  infoCard: "rounded-[24px] border border-library-ink/10 bg-library-panel p-5 text-library-paper sm:rounded-[28px] sm:p-6",
+  infoCard: "rounded-[24px] border border-slate-900/10 bg-slate-950 p-5 text-library-paper sm:rounded-[28px] sm:p-6",
   infoCardLabel: "text-[0.65rem] font-bold uppercase tracking-[0.18em] text-library-paper/55 sm:text-xs sm:tracking-[0.24em]",
   infoCardTitle: "mt-4 font-display text-3xl font-semibold text-library-gold-soft sm:text-4xl",
   infoCardText: "mt-3 text-sm leading-7 text-library-paper/72",
 
   // features section
   featuresGrid: "grid gap-5 md:grid-cols-2 lg:grid-cols-3",
-  featureCard: "rounded-[24px] border border-white/65 bg-white/72 p-5 shadow-[0_25px_60px_rgba(20,35,29,0.18)] backdrop-blur-[18px] sm:rounded-[30px] sm:p-6",
-  featureIconWrapper: "inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-library-paper-deep text-library-panel",
-  featureTitle: "mt-5 font-display text-2xl font-semibold text-library-ink sm:text-3xl",
-  featureText: "mt-3 text-sm leading-7 text-library-ink/68",
+  featureCard: "rounded-[24px] border border-white/65 bg-white/72 p-5 shadow-[0_25px_60px_rgba(15,23,42,0.18)] backdrop-blur-[18px] sm:rounded-[30px] sm:p-6",
+  featureIconWrapper: "inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-library-paper-deep text-slate-950",
+  featureTitle: "mt-5 font-display text-2xl font-semibold text-slate-900 sm:text-3xl",
+  featureText: "mt-3 text-sm leading-7 text-slate-900/68",
 };
 
 // assets/dummyStyles.js
