@@ -52,7 +52,7 @@ export const authorizeRoles = (...roles) => {
         // 1. Does req.user exist?
         // 2. Is the user's role included in the allowed roles?
         // If user doesn't have permission, stop the request
-        if (!req.user || !roles.includes(req.user.roles)) {
+        if (!req.user || !roles.includes(req.user.role)) {
             return res.status(403).json({ message: "Access Forbidden" });
         }
         next()

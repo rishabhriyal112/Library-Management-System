@@ -349,7 +349,7 @@ export async function updateProfile(req, res) {
         if (stream) user.stream = stream;
         if (semester) user.semester = semester;
         if (academicYear) user.year = academicYear;
-        if (rollNumber) user.rollNo = rollNumber;
+        if (rollNo) user.rollNo = rollNo;
 
         await user.save(); //updated Profile
 

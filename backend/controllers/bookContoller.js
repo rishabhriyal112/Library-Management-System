@@ -94,7 +94,7 @@ export async function issueManualBooks(req, res) {
         const todayIso = getLocalIsoDate();
 
         // Keep only books with title, book code, and due date.
-        const validBooks = books.filter(b => b.title && b.bookcode && b.dueDate);
+        const validBooks = books.filter(b => b.title && b.bookCode && b.dueDate);
 
         // Make sure at least one valid book was entered.
         if (validBooks.length === 0) {
@@ -283,7 +283,7 @@ export async function updateFineSettings(req,res){
             });
         }
 
-        res.status(200),json({success: true, message : "Fine Settings updated successfully"})
+        res.status(200).json({success: true, message : "Fine Settings updated successfully", settings});
     } catch (error) {
         console.error("Error updating fine settings : ", error);
         res.status(500).json({

@@ -1,5 +1,5 @@
 import React from 'react';
-import { protectedRouteStyles } from '../assets/dummyStyles';
+import { protectedRouteStyles as s } from '../assets/dummyStyles';
 import { useAuth } from './AuthContext';
 import { Form, Navigate, Outlet, useLocation } from 'react-router-dom';
 

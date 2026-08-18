@@ -15,6 +15,6 @@ bookRouter.put('/issues/:id/return',authenticateToken,authorizeRoles("admin"),re
 bookRouter.put('/issues/:id/fine',authenticateToken,authorizeRoles("admin"),applyFine);
 
 bookRouter.put('/issues/:id/clear-fine',authenticateToken,authorizeRoles("admin"),clearFine);
-bookRouter.get('/fine-settings',authenticateToken,authorizeRoles("admin"),updateFineSettings);
+bookRouter.put('/fine-settings',authenticateToken,authorizeRoles("admin"),updateFineSettings);
 
 export default bookRouter;
