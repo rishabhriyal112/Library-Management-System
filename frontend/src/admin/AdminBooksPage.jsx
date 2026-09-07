@@ -51,7 +51,7 @@ function AdminBooksPage() {
             try {
                 setSearchError("");
                 const response = await fetch(
-                    `${import.meta.env.VITE_API_URL}/api/students/search-by-roll?roll=${encodeURIComponent(
+                    `${import.meta.env.API_URL}/api/students/search-by-roll?roll=${encodeURIComponent(
                         issueForm.rollNumber.trim(),
                     )}`,
                     {
