@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import  { useEffect, useState } from 'react'
 import { loginStyles as s } from '../assets/dummyStyles'
 import { ArrowBigRight, Eye, EyeOff, LockKeyhole, Mail, ShieldCheck, UserRound } from 'lucide-react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'

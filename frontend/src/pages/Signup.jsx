@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { signupStyles as s } from '../assets/dummyStyles'
 import { useAuth } from '../shared/AuthContext';
 import { Link, useNavigate } from 'react-router-dom';
